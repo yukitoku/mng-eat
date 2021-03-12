@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Card, Container, CardGroup } from 'react-bootstrap';
+import { Card, Container, CardGroup, ListGroup, ListGroupItem } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Home() {
@@ -17,7 +17,14 @@ export default function Home() {
               <Card.Title>
                 <h3>食事登録</h3>
               </Card.Title>
-                肉
+              <ListGroup className="list-group-flush">
+                <ListGroupItem>
+                  肉
+                </ListGroupItem>
+                <ListGroupItem>
+                  魚
+                </ListGroupItem>
+              </ListGroup>
               </Card.Body>
              </Card>
              <Card>
